@@ -1,0 +1,107 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Roboto+Mono:ital,wght@0,100..700;1,100..700&display=swap');
+body{
+    background-color: snow;
+}*{
+    margin:0;
+    padding:0;
+}
+
+nav{
+    font-family: "Montserrat", serif;
+}
+nav ul{
+    display: flex;
+    align-items: center;
+    list-style-type: none;
+    height:65px;
+background-color: black;
+color: aliceblue;
+}
+nav ul li{
+    padding:0px 10px;
+}
+.brand{
+    display:flex;
+    align-items: center;
+    font-weight: bolder;
+    font-size: 1.5rem;
+}
+.brand img{
+    width: 50px;
+    height: 50px;
+    margin-left: 20px;
+    margin-top: 5px;
+}
+.container{
+    min-height: 60vh;
+    background-color: black;
+    color:white;
+    display: flex;
+    width:70%;
+    border-radius: 10px;
+    padding: 40px;
+    margin:23px auto;
+    background-image: url('bg.png');
+    background-size: cover; /* Ensures the image covers the entire div */
+    background-position: center; /* Ensures the image is centered */
+    background-repeat: no-repeat;
+}
+.bottom{
+    position:sticky;
+    height:100px;
+    background-color: black;
+    color:white;
+    bottom: 0px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    
+}
+.icons{
+    margin-top: 13px;
+}
+.icons i{
+    cursor: pointer;
+}
+#myProgressBar{
+    width:80vw;
+cursor: pointer;
+}
+.songItem{
+height:50px;
+display: flex;
+background-color: white;
+color:black;
+margin:12px 0;
+justify-content: space-between;
+align-items: center;
+border-radius: 20px;
+padding: 0px 20px;
+}
+.songItemContainer{
+margin-top:70px;
+}
+.songItem i{
+    cursor:pointer;
+}
+.songItem img{
+    width: 43px;
+    margin:0px 23px;
+}
+.songlistplay span {
+    display: inline-flex;
+    align-items: center;
+}.songlistplay {
+    display: flex;
+    align-items: center; /* Vertically center the content inside .songlistplay */
+    gap: 10px; /* Optional: to add spacing between the time and the play icon */
+}
+.songInfo{
+ position:absolute;   
+ left:10vw; 
+ font-family: italic;
+}.songInfo img{
+ opacity:0;    
+ transition:opacity 0.4s;
+}
